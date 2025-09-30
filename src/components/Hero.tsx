@@ -10,7 +10,7 @@ export const Hero = ({ onJoinWaitlist }: { onJoinWaitlist: () => void }) => {
       
       {/* Logo */}
       <div className="absolute top-6 left-6 z-10">
-        <img src={logo} alt="Coral Academy" className="h-8 md:h-10 w-auto" />
+        <img src={logo} alt="Coral Academy" className="h-6 md:h-8 w-auto" />
       </div>
       
       {/* Ticker */}
