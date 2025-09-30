@@ -22,7 +22,7 @@ const curriculumData = [
   {
     week: "Week 3",
     title: "Introduction to Investing",
-    description: "Simple concepts of growing money through investments and understanding risk vs. reward.",
+    description: "Simple concepts of growing money through investments and understanding risk vs reward.",
     icon: TrendingUp,
   },
   {
