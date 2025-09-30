@@ -1,11 +1,17 @@
 import { Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
+import logo from "@/assets/logo.svg";
 
 export const Hero = ({ onJoinWaitlist }: { onJoinWaitlist: () => void }) => {
   return (
     <section className="relative min-h-[85vh] flex flex-col items-center justify-center px-4 py-12 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-[var(--gradient-hero)] -z-10" />
+      
+      {/* Logo */}
+      <div className="absolute top-6 left-6 z-10">
+        <img src={logo} alt="Coral Academy" className="h-10 md:h-12 w-auto" />
+      </div>
       
       {/* Ticker */}
       <div className="mb-8 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm animate-fade-in">
