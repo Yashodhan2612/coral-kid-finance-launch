@@ -1,11 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import { Hero } from "@/components/Hero";
+import { Curriculum } from "@/components/Curriculum";
+import { WaitlistForm } from "@/components/WaitlistForm";
 
 const Index = () => {
+  const navigate = useNavigate();
+  const formRef = useRef<HTMLDivElement>(null);
+
+  const scrollToForm = () => {
+    formRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleFormSuccess = () => {
+    navigate("/thanks");
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-background">
+      <Hero onJoinWaitlist={scrollToForm} />
+      <Curriculum />
+      <div ref={formRef}>
+        <WaitlistForm onSuccess={handleFormSuccess} />
       </div>
     </div>
   );
