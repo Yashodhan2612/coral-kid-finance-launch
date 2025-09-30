@@ -30,7 +30,7 @@ export const Hero = ({ onJoinWaitlist }: { onJoinWaitlist: () => void }) => {
       <Button
         size="lg"
         onClick={onJoinWaitlist}
-        className="text-lg px-8 py-6 rounded-full bg-[var(--gradient-cta)] shadow-[var(--shadow-warm)] hover:scale-105 transition-all duration-300 animate-fade-in"
+        className="text-lg px-8 py-6 rounded-full bg-gradient-cta shadow-[var(--shadow-warm)] hover:scale-105 transition-all duration-300 animate-fade-in"
       >
         Join the Waitlist
       </Button>

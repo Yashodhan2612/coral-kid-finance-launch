@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Hero } from "@/components/Hero";
 import { Curriculum } from "@/components/Curriculum";
@@ -15,6 +15,10 @@ const Index = () => {
   const handleFormSuccess = () => {
     navigate("/thanks");
   };
+
+  useEffect(() => {
+    document.title = "Coral Kid Finance | Financial Literacy for Kids";
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">

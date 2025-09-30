@@ -116,3 +116,10 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  /* Ensure gradient variables are applied as background-images, not colors */
+  .bg-gradient-cta {
+    background-image: var(--gradient-cta);
+  }
+}

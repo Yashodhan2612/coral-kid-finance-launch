@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -43,16 +43,27 @@ export const WaitlistForm = ({ onSuccess }: { onSuccess: () => void }) => {
     },
   });
 
+  const timeoutRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current !== null) {
+        window.clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     setIsSubmitting(true);
-    
+
     // Simulate form submission
-    setTimeout(() => {
+    timeoutRef.current = window.setTimeout(() => {
       console.log("Form submitted:", values);
       toast({
         title: "Success!",
         description: "You've been added to the waitlist.",
       });
+      setIsSubmitting(false);
       onSuccess();
     }, 1500);
   };
@@ -140,7 +151,7 @@ export const WaitlistForm = ({ onSuccess }: { onSuccess: () => void }) => {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-6 text-lg rounded-full bg-[var(--gradient-cta)] shadow-[var(--shadow-warm)] hover:scale-105 transition-all duration-300"
+                className="w-full py-6 text-lg rounded-full bg-gradient-cta shadow-[var(--shadow-warm)] hover:scale-105 transition-all duration-300"
               >
                 {isSubmitting ? (
                   <>

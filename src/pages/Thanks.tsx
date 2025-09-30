@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
 import { CheckCircle2, ExternalLink, Tag } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Thanks = () => {
+  useEffect(() => {
+    document.title = "Thanks | Coral Kid Finance";
+  }, []);
   const couponSteps = [
     { step: 1, text: "Log into your Coral Academy account" },
     { step: 2, text: "Navigate to Account Settings" },
@@ -35,7 +39,7 @@ const Thanks = () => {
           </p>
           <Button
             size="lg"
-            className="text-lg px-8 py-6 rounded-full bg-[var(--gradient-cta)] shadow-[var(--shadow-warm)] hover:scale-105 transition-all duration-300"
+            className="text-lg px-8 py-6 rounded-full bg-gradient-cta shadow-[var(--shadow-warm)] hover:scale-105 transition-all duration-300"
             asChild
           >
             <a
