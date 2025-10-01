@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
-import { CheckCircle2, ExternalLink, Tag } from "lucide-react";
+import { CheckCircle2, ExternalLink, Tag, Facebook, Instagram, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Thanks = () => {
@@ -82,30 +82,33 @@ const Thanks = () => {
           <p className="text-sm text-muted-foreground mb-4">
             Follow us for updates and exciting classes for kids ages 8-13
           </p>
-          <div className="flex items-center justify-center gap-6">
-            <a
-              href="https://twitter.com/coralacademy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              Twitter
-            </a>
+          <div className="flex items-center justify-center gap-8">
             <a
               href="https://facebook.com/coralacademy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
-              Facebook
+              <Facebook className="w-5 h-5" />
+              <span>Facebook</span>
             </a>
             <a
               href="https://instagram.com/coralacademy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
-              Instagram
+              <Instagram className="w-5 h-5" />
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://coralacademy.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Globe className="w-5 h-5" />
+              <span>Visit Coral Academy</span>
             </a>
           </div>
         </div>
