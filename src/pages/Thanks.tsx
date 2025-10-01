@@ -58,7 +58,9 @@ const Thanks = () => {
         <div className="bg-card border border-border rounded-3xl p-8 shadow-[var(--shadow-soft)] animate-fade-in">
           <div className="flex items-center justify-center gap-2 mb-6">
             <Tag className="w-6 h-6 text-accent" />
-            <h3 className="text-2xl font-semibold">How to Apply Your Coupon</h3>
+            <h3 className="text-2xl font-semibold">
+              Use code <span className="text-primary font-bold">CORAL25</span> to get $40 worth of subscription for 1 week.
+            </h3>
           </div>
           
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 max-w-xl mx-auto">
