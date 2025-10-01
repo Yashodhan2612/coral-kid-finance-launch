@@ -8,9 +8,9 @@ const Thanks = () => {
     document.title = "Thanks | Coral Kid Finance";
   }, []);
   const couponSteps = [
-    { step: 1, text: "Log into your Coral Academy account" },
-    { step: 2, text: "Navigate to Account Settings" },
-    { step: 3, text: "Enter coupon code in the 'Apply Coupon' field" },
+    { step: 1, text: "Log into your Coral Academy Account" },
+    { step: 2, text: "Navigate to Settings -> Coupons, Passes & Referral section" },
+    { step: 3, text: "Enter Coupon code in the field provided and click on Redeem." },
   ];
 
   return (
