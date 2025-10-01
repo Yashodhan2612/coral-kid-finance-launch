@@ -63,10 +63,10 @@ const Thanks = () => {
             </h3>
           </div>
           
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 max-w-xl mx-auto">
+          <div className="flex flex-col md:flex-row items-start justify-between gap-6 max-w-xl mx-auto">
             {couponSteps.map((item) => (
-              <div key={item.step} className="flex-1 text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent font-bold text-lg mb-3">
+              <div key={item.step} className="flex-1 flex flex-col items-center text-center">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent font-bold text-lg mb-3">
                   {item.step}
                 </div>
                 <p className="text-sm text-muted-foreground">
