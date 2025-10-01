@@ -88,7 +88,7 @@ export const WaitlistForm = ({ onSuccess }: { onSuccess: () => void }) => {
                 name="parentName"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Parent Name *</FormLabel>
+                    <FormLabel>Name *</FormLabel>
                     <FormControl>
                       <Input placeholder="John Doe" {...field} />
                     </FormControl>
@@ -102,7 +102,7 @@ export const WaitlistForm = ({ onSuccess }: { onSuccess: () => void }) => {
                 name="parentEmail"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Parent Email *</FormLabel>
+                    <FormLabel>Email *</FormLabel>
                     <FormControl>
                       <Input type="email" placeholder="parent@example.com" {...field} />
                     </FormControl>
@@ -138,9 +138,9 @@ export const WaitlistForm = ({ onSuccess }: { onSuccess: () => void }) => {
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
-                        <SelectItem value="parent-interested">Parent interested in financial education</SelectItem>
-                        <SelectItem value="educator">Educator seeking curriculum</SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
+                        <SelectItem value="parent-interested">I am a kid (8-13 years old)</SelectItem>
+                        <SelectItem value="educator">I am a parent of a kid (8-13 years old)</SelectItem>
+                        <SelectItem value="other">Neither of above</SelectItem>
                       </SelectContent>
                     </Select>
                     <FormMessage />

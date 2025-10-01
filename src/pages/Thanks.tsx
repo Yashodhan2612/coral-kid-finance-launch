@@ -78,7 +78,7 @@ const Thanks = () => {
         {/* Footer */}
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-sm text-muted-foreground mb-4">
-            Follow us for updates and financial literacy tips
+            Follow us for updates and exciting classes for kids ages 8-13
           </p>
           <div className="flex items-center justify-center gap-6">
             <a
