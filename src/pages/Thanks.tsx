@@ -56,14 +56,14 @@ const Thanks = () => {
 
         {/* Coupon Instructions */}
         <div className="bg-card border border-border rounded-3xl p-8 shadow-[var(--shadow-soft)] animate-fade-in">
-          <div className="flex items-center justify-center gap-2 mb-6">
-            <Tag className="w-6 h-6 text-accent" />
-            <h3 className="text-2xl font-semibold">
+          <div className="flex items-start justify-center gap-3 mb-6">
+            <Tag className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+            <h3 className="text-lg font-semibold">
               Use code <span className="text-primary font-bold">CORAL25</span> to get $40 worth of subscription for 1 week.
             </h3>
           </div>
           
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 max-w-xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 max-w-xl mx-auto">
             {couponSteps.map((item) => (
               <div key={item.step} className="flex-1 text-center">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent font-bold text-lg mb-3">
