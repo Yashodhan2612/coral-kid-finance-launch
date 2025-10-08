@@ -110,17 +110,6 @@ export const Curriculum = () => {
           })}
         </Accordion>
 
-        <div className="mt-6 text-center">
-          <Button
-            variant="outline"
-            onClick={() => setShowMore(!showMore)}
-            className="group"
-          >
-            {showMore ? "Show Less" : "Show More"}
-            <ChevronDown className={`ml-2 h-4 w-4 transition-transform duration-300 ${showMore ? "rotate-180" : ""}`} />
-          </Button>
-        </div>
-
         <div className={`overflow-hidden transition-all duration-500 ${showMore ? "max-h-[2000px] opacity-100 mt-4" : "max-h-0 opacity-0"}`}>
           <Accordion type="single" collapsible className="space-y-4">
             {additionalWeeksData.map((item, index) => {
@@ -155,6 +144,17 @@ export const Curriculum = () => {
               );
             })}
           </Accordion>
+        </div>
+
+        <div className="mt-6 text-center">
+          <Button
+            variant="outline"
+            onClick={() => setShowMore(!showMore)}
+            className="group"
+          >
+            {showMore ? "Show Less" : "Show More"}
+            <ChevronDown className={`ml-2 h-4 w-4 transition-transform duration-300 ${showMore ? "rotate-180" : ""}`} />
+          </Button>
         </div>
       </div>
     </section>
