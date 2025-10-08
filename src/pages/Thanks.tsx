@@ -132,7 +132,7 @@ const Thanks = () => {
             asChild
           >
             <a
-              href="https://www.coralacademy.com/class/financial-literacy-for-future-leaders-dea7aae1-5ce7-4e02-8c20-a73d62a061ac?referrer_id=4139f46a-3237-4ddd-9749-2a0ed8e282f4"
+              href="https://www.coralacademy.com/browse"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2"
