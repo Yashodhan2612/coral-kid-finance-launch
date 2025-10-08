@@ -45,7 +45,7 @@ const Thanks = () => {
               align: "start",
               loop: false,
             }}
-            className="w-full"
+            className="w-full relative px-16"
           >
             <CarouselContent className="-ml-2 md:-ml-4">
               {[
@@ -127,8 +127,8 @@ const Thanks = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-2" />
-            <CarouselNext className="right-2" />
+            <CarouselPrevious className="-left-12 h-12 w-12 border-2 border-primary hover:bg-primary hover:text-primary-foreground" />
+            <CarouselNext className="-right-12 h-12 w-12 border-2 border-primary hover:bg-primary hover:text-primary-foreground" />
           </Carousel>
 
           <Button
