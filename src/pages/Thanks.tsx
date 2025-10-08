@@ -21,27 +21,27 @@ const Thanks = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-12 bg-[var(--gradient-hero)]">
-      <div className="max-w-2xl mx-auto text-center">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 md:py-12 bg-[var(--gradient-hero)]">
+      <div className="max-w-2xl mx-auto text-center w-full">
         {/* Success Icon */}
-        <div className="mb-8 inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 animate-scale-in">
-          <CheckCircle2 className="w-12 h-12 text-primary" />
+        <div className="mb-6 md:mb-8 inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/10 animate-scale-in">
+          <CheckCircle2 className="w-10 h-10 md:w-12 md:h-12 text-primary" />
         </div>
 
         {/* Thank You Message */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 animate-fade-in">
           Thanks for Joining!
         </h1>
-        <p className="text-xl text-muted-foreground mb-10 animate-fade-in">
+        <p className="text-lg md:text-xl text-muted-foreground mb-8 md:mb-10 animate-fade-in px-2">
           We'll reach out to you soon with curriculum updates and class details.
         </p>
 
         {/* Classes Carousel */}
-        <div className="bg-card border border-border rounded-3xl p-8 mb-10 shadow-[var(--shadow-soft)] animate-fade-in">
-          <h2 className="text-2xl md:text-3xl font-bold mb-2">
+        <div className="bg-card border border-border rounded-2xl md:rounded-3xl p-4 md:p-8 mb-8 md:mb-10 shadow-[var(--shadow-soft)] animate-fade-in">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2">
             START LEARNING TODAY
           </h2>
-          <p className="text-muted-foreground mb-8">
+          <p className="text-sm md:text-base text-muted-foreground mb-6 md:mb-8 px-2">
             Discover interactive, engaging online classes for kids in just a click
           </p>
           
@@ -50,7 +50,7 @@ const Thanks = () => {
               align: "start",
               loop: false,
             }}
-            className="w-full relative px-16"
+            className="w-full relative px-0 md:px-16"
           >
             <CarouselContent className="-ml-2 md:-ml-4">
               {[
@@ -127,20 +127,20 @@ const Thanks = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="-left-12 h-12 w-12 border-2 border-primary hover:bg-primary hover:text-primary-foreground" />
-            <CarouselNext className="-right-12 h-12 w-12 border-2 border-primary hover:bg-primary hover:text-primary-foreground" />
+            <CarouselPrevious className="hidden md:flex -left-12 h-12 w-12 border-2 border-primary hover:bg-primary hover:text-primary-foreground" />
+            <CarouselNext className="hidden md:flex -right-12 h-12 w-12 border-2 border-primary hover:bg-primary hover:text-primary-foreground" />
           </Carousel>
 
           <Button
             size="lg"
-            className="mt-8 text-lg px-8 py-6 rounded-full bg-gradient-cta shadow-[var(--shadow-warm)] hover:scale-105 transition-all duration-300"
+            className="mt-6 md:mt-8 text-base md:text-lg px-6 py-5 md:px-8 md:py-6 rounded-full bg-gradient-cta shadow-[var(--shadow-warm)] hover:scale-105 transition-all duration-300 w-full md:w-auto"
             asChild
           >
             <a
               href="https://www.coralacademy.com/browse"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2"
+              className="inline-flex items-center justify-center gap-2"
             >
               Visit Coral Academy
             </a>
@@ -148,28 +148,28 @@ const Thanks = () => {
         </div>
 
         {/* Coupon Instructions */}
-        <div className="bg-card border border-border rounded-3xl p-8 shadow-[var(--shadow-soft)] animate-fade-in">
-          <div className="flex items-start justify-center gap-3 mb-6">
-            <Tag className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-            <h3 className="text-lg font-semibold">
+        <div className="bg-card border border-border rounded-2xl md:rounded-3xl p-4 md:p-8 shadow-[var(--shadow-soft)] animate-fade-in">
+          <div className="flex items-start justify-center gap-2 md:gap-3 mb-4 md:mb-6">
+            <Tag className="w-4 h-4 md:w-5 md:h-5 text-accent mt-1 flex-shrink-0" />
+            <h3 className="text-base md:text-lg font-semibold text-left md:text-center">
               Use code <span className="text-primary font-bold">CORAL25</span> to get $40 worth of subscription for 1 FREE week.
             </h3>
           </div>
           
-          <div className="flex flex-col md:flex-row items-start justify-between gap-6 max-w-xl mx-auto">
+          <div className="flex flex-col md:flex-row items-start justify-between gap-4 md:gap-6 max-w-xl mx-auto">
             {couponSteps.map((item) => (
-              <div key={item.step} className="flex-1 flex flex-col items-center text-center">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent font-bold text-lg mb-3">
+              <div key={item.step} className="w-full md:flex-1 flex flex-col items-center text-center">
+                <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-accent/10 text-accent font-bold text-base md:text-lg mb-2 md:mb-3">
                   {item.step}
                 </div>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-xs md:text-sm text-muted-foreground">
                   {item.text}
                   {item.link && (
                     <a 
                       href={item.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-primary hover:underline"
+                      className="text-primary hover:underline break-words"
                     >
                       {item.link}
                     </a>
@@ -181,16 +181,16 @@ const Thanks = () => {
         </div>
 
         {/* Footer */}
-        <div className="mt-12 pt-8 border-t border-border">
-          <p className="text-sm text-muted-foreground mb-4">
+        <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-border">
+          <p className="text-xs md:text-sm text-muted-foreground mb-4 px-2">
             Follow us for updates and exciting classes for kids ages 8-13
           </p>
-          <div className="flex items-center justify-center gap-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8">
             <a
               href="https://facebook.com/coralacademy"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               <Facebook className="w-5 h-5" />
               <span>Facebook</span>
@@ -199,7 +199,7 @@ const Thanks = () => {
               href="https://instagram.com/coralacademy"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               <Instagram className="w-5 h-5" />
               <span>Instagram</span>
@@ -208,7 +208,7 @@ const Thanks = () => {
               href="https://www.coralacademy.com/class/financial-literacy-for-future-leaders-dea7aae1-5ce7-4e02-8c20-a73d62a061ac?referrer_id=4139f46a-3237-4ddd-9749-2a0ed8e282f4"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               <Globe className="w-5 h-5" />
               <span>Visit Coral Academy</span>
