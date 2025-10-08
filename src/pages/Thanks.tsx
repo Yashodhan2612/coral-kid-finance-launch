@@ -52,7 +52,7 @@ const Thanks = () => {
             }}
             className="w-full relative px-0 md:px-16"
           >
-            <CarouselContent className="-ml-2 md:-ml-4">
+            <CarouselContent className="-ml-2 md:-ml-6">
               {[
                 {
                   title: "Financial Literacy Basics",
@@ -75,49 +75,49 @@ const Thanks = () => {
                   color: "bg-gradient-to-br from-blue-100 to-cyan-100"
                 },
               ].map((classItem, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
-                  <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow">
-                    <CardContent className="p-0">
+                <CarouselItem key={index} className="pl-2 md:pl-6 basis-full sm:basis-1/2 md:basis-1/2 lg:basis-1/3">
+                  <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow h-full">
+                    <CardContent className="p-0 flex flex-col h-full">
                       {/* Placeholder Image */}
-                      <div className={`h-40 ${classItem.color} flex items-center justify-center`}>
+                      <div className={`h-40 md:h-48 ${classItem.color} flex items-center justify-center`}>
                         <div className="text-center px-4">
-                          <div className="w-16 h-16 mx-auto mb-2 rounded-full bg-white/50 flex items-center justify-center">
-                            <span className="text-2xl">💰</span>
+                          <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-2 rounded-full bg-white/50 flex items-center justify-center">
+                            <span className="text-2xl md:text-3xl">💰</span>
                           </div>
                         </div>
                       </div>
                       
                       {/* Card Content */}
-                      <div className="p-5">
-                        <h3 className="font-semibold text-lg mb-3 line-clamp-2 min-h-[56px]">
+                      <div className="p-4 md:p-6 flex flex-col flex-1">
+                        <h3 className="font-semibold text-base md:text-lg mb-3 md:mb-4 line-clamp-2 min-h-[48px] md:min-h-[56px]">
                           {classItem.title}
                         </h3>
                         
                         {/* Teacher Info */}
-                        <div className="flex items-center gap-2 mb-4">
-                          <div className="w-8 h-8 rounded-full bg-muted flex items-center justify-center">
-                            <span className="text-xs">👤</span>
+                        <div className="flex items-center gap-2 mb-4 md:mb-5">
+                          <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-muted flex items-center justify-center">
+                            <span className="text-xs md:text-sm">👤</span>
                           </div>
-                          <span className="text-sm text-muted-foreground">{classItem.teacher}</span>
+                          <span className="text-sm md:text-base text-muted-foreground">{classItem.teacher}</span>
                         </div>
                         
                         {/* CTA */}
-                        <Button className="w-full bg-primary hover:bg-primary/90 mb-4">
+                        <Button className="w-full bg-primary hover:bg-primary/90 mb-4 md:mb-5 text-sm md:text-base py-2 md:py-3">
                           TRY FOR FREE
                         </Button>
                         
                         {/* Class Details */}
-                        <div className="flex items-center justify-between text-xs text-muted-foreground pt-3 border-t border-border">
-                          <div className="flex items-center gap-1">
-                            <Clock className="w-3 h-3" />
+                        <div className="flex items-center justify-between text-xs md:text-sm text-muted-foreground pt-3 md:pt-4 border-t border-border mt-auto">
+                          <div className="flex items-center gap-1 md:gap-1.5">
+                            <Clock className="w-3 h-3 md:w-4 md:h-4" />
                             <span>50m</span>
                           </div>
-                          <div className="flex items-center gap-1">
-                            <Calendar className="w-3 h-3" />
+                          <div className="flex items-center gap-1 md:gap-1.5">
+                            <Calendar className="w-3 h-3 md:w-4 md:h-4" />
                             <span>1/week</span>
                           </div>
-                          <div className="flex items-center gap-1">
-                            <Users className="w-3 h-3" />
+                          <div className="flex items-center gap-1 md:gap-1.5">
+                            <Users className="w-3 h-3 md:w-4 md:h-4" />
                             <span>8 - 13</span>
                           </div>
                         </div>
