@@ -130,6 +130,21 @@ const Thanks = () => {
             <CarouselPrevious className="left-2" />
             <CarouselNext className="right-2" />
           </Carousel>
+
+          <Button
+            size="lg"
+            className="mt-8 text-lg px-8 py-6 rounded-full bg-gradient-cta shadow-[var(--shadow-warm)] hover:scale-105 transition-all duration-300"
+            asChild
+          >
+            <a
+              href="https://www.coralacademy.com/class/financial-literacy-for-future-leaders-dea7aae1-5ce7-4e02-8c20-a73d62a061ac?referrer_id=4139f46a-3237-4ddd-9749-2a0ed8e282f4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2"
+            >
+              Visit Coral Academy
+            </a>
+          </Button>
         </div>
 
         {/* Coupon Instructions */}
