@@ -74,7 +74,7 @@ const Thanks = () => {
                   <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow">
                     <CardContent className="p-0">
                       {/* Placeholder Image */}
-                      <div className={`h-48 ${classItem.color} flex items-center justify-center`}>
+                      <div className={`h-40 ${classItem.color} flex items-center justify-center`}>
                         <div className="text-center px-4">
                           <div className="w-16 h-16 mx-auto mb-2 rounded-full bg-white/50 flex items-center justify-center">
                             <span className="text-2xl">💰</span>
@@ -84,7 +84,7 @@ const Thanks = () => {
                       
                       {/* Card Content */}
                       <div className="p-5">
-                        <h3 className="font-semibold text-lg mb-3 line-clamp-2">
+                        <h3 className="font-semibold text-lg mb-3 line-clamp-2 min-h-[56px]">
                           {classItem.title}
                         </h3>
                         
@@ -96,15 +96,10 @@ const Thanks = () => {
                           <span className="text-sm text-muted-foreground">{classItem.teacher}</span>
                         </div>
                         
-                        {/* Price and CTA */}
-                        <div className="mb-4">
-                          <div className="text-2xl font-bold text-primary mb-2">
-                            $20 <span className="text-sm font-normal text-muted-foreground">/Session</span>
-                          </div>
-                          <Button className="w-full bg-primary hover:bg-primary/90">
-                            TRY FOR FREE
-                          </Button>
-                        </div>
+                        {/* CTA */}
+                        <Button className="w-full bg-primary hover:bg-primary/90 mb-4">
+                          TRY FOR FREE
+                        </Button>
                         
                         {/* Class Details */}
                         <div className="flex items-center justify-between text-xs text-muted-foreground pt-3 border-t border-border">
