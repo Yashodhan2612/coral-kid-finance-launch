@@ -23,7 +23,7 @@ export const Hero = ({ onJoinWaitlist }: { onJoinWaitlist: () => void }) => {
 
       {/* Main headline */}
       <h1 className="text-4xl md:text-6xl font-bold text-center mb-6 max-w-4xl leading-tight animate-fade-in">
-        Financial Literacy for Kids: Building{" "}
+        Financial Literacy for Kids: Build{" "}
         <span className="text-primary">Smart Money Habits</span> Early
       </h1>
 
