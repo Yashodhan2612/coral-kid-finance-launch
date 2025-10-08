@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
-import { CheckCircle2, ExternalLink, Tag, Facebook, Instagram, Globe } from "lucide-react";
+import { CheckCircle2, Tag, Facebook, Instagram, Globe, Clock, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const Thanks = () => {
   useEffect(() => {
@@ -29,29 +31,105 @@ const Thanks = () => {
           We'll reach out to you soon with curriculum updates and class details.
         </p>
 
-        {/* CTA Card */}
+        {/* Classes Carousel */}
         <div className="bg-card border border-border rounded-3xl p-8 mb-10 shadow-[var(--shadow-soft)] animate-fade-in">
-          <h2 className="text-2xl font-semibold mb-4">
-            Can't Wait to Get Started?
+          <h2 className="text-2xl md:text-3xl font-bold mb-2">
+            START LEARNING TODAY
           </h2>
-          <p className="text-muted-foreground mb-6">
-            In the meanwhile, try joining our Financial Literacy Weekly Class at Coral Academy.
+          <p className="text-muted-foreground mb-8">
+            Discover interactive, engaging online classes for kids in just a click
           </p>
-          <Button
-            size="lg"
-            className="text-lg px-8 py-6 rounded-full bg-gradient-cta shadow-[var(--shadow-warm)] hover:scale-105 transition-all duration-300"
-            asChild
+          
+          <Carousel
+            opts={{
+              align: "start",
+              loop: false,
+            }}
+            className="w-full"
           >
-            <a
-              href="https://www.coralacademy.com/class/financial-literacy-for-future-leaders-dea7aae1-5ce7-4e02-8c20-a73d62a061ac?referrer_id=4139f46a-3237-4ddd-9749-2a0ed8e282f4"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2"
-            >
-              Visit Coral Academy
-              <ExternalLink className="w-5 h-5" />
-            </a>
-          </Button>
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {[
+                {
+                  title: "Financial Literacy Basics",
+                  teacher: "Teacher Amalia",
+                  color: "bg-gradient-to-br from-green-100 to-blue-100"
+                },
+                {
+                  title: "Smart Saving Strategies",
+                  teacher: "Teacher Jordan",
+                  color: "bg-gradient-to-br from-yellow-100 to-orange-100"
+                },
+                {
+                  title: "Understanding Money Value",
+                  teacher: "Teacher Sarah",
+                  color: "bg-gradient-to-br from-purple-100 to-pink-100"
+                },
+                {
+                  title: "Investment for Kids",
+                  teacher: "Teacher Mike",
+                  color: "bg-gradient-to-br from-blue-100 to-cyan-100"
+                },
+              ].map((classItem, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
+                  <Card className="overflow-hidden border-border hover:shadow-lg transition-shadow">
+                    <CardContent className="p-0">
+                      {/* Placeholder Image */}
+                      <div className={`h-48 ${classItem.color} flex items-center justify-center`}>
+                        <div className="text-center px-4">
+                          <div className="w-16 h-16 mx-auto mb-2 rounded-full bg-white/50 flex items-center justify-center">
+                            <span className="text-2xl">💰</span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Card Content */}
+                      <div className="p-5">
+                        <h3 className="font-semibold text-lg mb-3 line-clamp-2">
+                          {classItem.title}
+                        </h3>
+                        
+                        {/* Teacher Info */}
+                        <div className="flex items-center gap-2 mb-4">
+                          <div className="w-8 h-8 rounded-full bg-muted flex items-center justify-center">
+                            <span className="text-xs">👤</span>
+                          </div>
+                          <span className="text-sm text-muted-foreground">{classItem.teacher}</span>
+                        </div>
+                        
+                        {/* Price and CTA */}
+                        <div className="mb-4">
+                          <div className="text-2xl font-bold text-primary mb-2">
+                            $20 <span className="text-sm font-normal text-muted-foreground">/Session</span>
+                          </div>
+                          <Button className="w-full bg-primary hover:bg-primary/90">
+                            TRY FOR FREE
+                          </Button>
+                        </div>
+                        
+                        {/* Class Details */}
+                        <div className="flex items-center justify-between text-xs text-muted-foreground pt-3 border-t border-border">
+                          <div className="flex items-center gap-1">
+                            <Clock className="w-3 h-3" />
+                            <span>50m</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <Calendar className="w-3 h-3" />
+                            <span>1/week</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <Users className="w-3 h-3" />
+                            <span>8 - 13</span>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
         </div>
 
         {/* Coupon Instructions */}
