@@ -10,7 +10,12 @@ const Thanks = () => {
     document.title = "Thanks | Coral Kid Finance";
   }, []);
   const couponSteps = [
-    { step: 1, text: "Log into your Coral Academy Account" },
+    { 
+      step: 1, 
+      text: "Log into ", 
+      link: "www.coralacademy.com",
+      url: "https://www.coralacademy.com"
+    },
     { step: 2, text: "Navigate to Settings -> Coupons, Passes & Referral section" },
     { step: 3, text: "Enter Coupon code in the field provided and click on Redeem." },
   ];
@@ -147,7 +152,7 @@ const Thanks = () => {
           <div className="flex items-start justify-center gap-3 mb-6">
             <Tag className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
             <h3 className="text-lg font-semibold">
-              Use code <span className="text-primary font-bold">CORAL25</span> to get $40 worth of subscription for 1 week.
+              Use code <span className="text-primary font-bold">CORAL25</span> to get $40 worth of subscription for 1 FREE week.
             </h3>
           </div>
           
@@ -159,6 +164,16 @@ const Thanks = () => {
                 </div>
                 <p className="text-sm text-muted-foreground">
                   {item.text}
+                  {item.link && (
+                    <a 
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline"
+                    >
+                      {item.link}
+                    </a>
+                  )}
                 </p>
               </div>
             ))}
