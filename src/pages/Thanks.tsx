@@ -215,13 +215,6 @@ const Thanks = () => {
             </a>
           </div>
         </div>
-
-        {/* Back Link */}
-        <div className="mt-8">
-          <Button variant="ghost" asChild>
-            <Link to="/">← Back to Home</Link>
-          </Button>
-        </div>
       </div>
     </div>
   );
