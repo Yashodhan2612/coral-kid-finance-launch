@@ -23,7 +23,7 @@ export const Hero = ({ onJoinWaitlist }: { onJoinWaitlist: () => void }) => {
 
       {/* Main headline */}
       <div className="text-center mb-6 max-w-4xl animate-fade-in">
-        <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4">
+        <h1 className="text-5xl md:text-7xl font-bold text-primary mb-4">
           Finance 101
         </h1>
         <div className="relative inline-block">
