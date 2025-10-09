@@ -4,7 +4,7 @@ import logo from "@/assets/logo.svg";
 
 export const Hero = ({ onJoinWaitlist }: { onJoinWaitlist: () => void }) => {
   return (
-    <section className="relative min-h-[85vh] flex flex-col items-center justify-center px-4 py-8 overflow-hidden">
+    <section className="relative min-h-[85vh] flex flex-col items-center justify-center px-4 py-4 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-[var(--gradient-hero)] -z-10" />
       
