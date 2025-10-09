@@ -37,7 +37,7 @@ const Thanks = () => {
             START LEARNING TODAY
           </h2>
           <p className="text-sm md:text-base text-muted-foreground mb-6 md:mb-8 px-2">
-            Discover interactive, engaging online classes for kids in just a click
+            Browse through our classes and enroll now!
           </p>
           
           <Carousel
