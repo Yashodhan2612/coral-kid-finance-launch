@@ -17,7 +17,7 @@ export const Hero = ({ onJoinWaitlist }: { onJoinWaitlist: () => void }) => {
       <div className="mt-16 mb-8 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm animate-fade-in">
         <Sparkles className="w-4 h-4 text-primary" />
         <span className="text-xs font-semibold text-primary">
-          Designed and Backed by Stanford Professors
+          Designed and Backed by Stanford Alums
         </span>
       </div>
 
