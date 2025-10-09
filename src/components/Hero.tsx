@@ -22,14 +22,23 @@ export const Hero = ({ onJoinWaitlist }: { onJoinWaitlist: () => void }) => {
       </div>
 
       {/* Main headline */}
-      <h1 className="text-4xl md:text-6xl font-bold text-center mb-6 max-w-4xl leading-tight animate-fade-in">
-        Financial Literacy for Kids: Build{" "}
-        <span className="text-primary">Smart Money Habits</span> Early
-      </h1>
+      <div className="text-center mb-6 max-w-4xl animate-fade-in">
+        <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4">
+          Finance 101
+        </h1>
+        <div className="relative inline-block">
+          <p className="text-xl md:text-2xl text-muted-foreground italic mb-2">
+            for kids ages 8-13
+          </p>
+          <svg className="absolute -bottom-1 left-0 w-full" height="8" viewBox="0 0 200 8" preserveAspectRatio="none">
+            <path d="M 0 6 Q 100 2, 200 6" stroke="currentColor" strokeWidth="1.5" fill="none" className="text-muted-foreground/30" />
+          </svg>
+        </div>
+      </div>
 
       {/* Sub-text */}
-      <p className="text-lg md:text-xl text-muted-foreground text-center max-w-2xl mb-10 animate-fade-in">
-        From saving and investing to making smart choices — give your child the financial head start adults wish they had.
+      <p className="text-lg md:text-xl text-foreground text-center max-w-2xl mb-10 animate-fade-in">
+        From saving and investing to making wise choices — build smart money habits early.
       </p>
 
       {/* CTA Button */}
