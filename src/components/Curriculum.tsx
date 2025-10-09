@@ -12,7 +12,11 @@ import { ChevronDown } from "lucide-react";
 const curriculumData = [
   {
     week: "Week 1",
-    title: "The Story of Money – How It Works and Why It Matters",
+    title: (
+      <>
+        The Story of Money – <span className="text-primary">How It Works and Why It Matters</span>
+      </>
+    ),
     description: "From barter to digital payments, kids learn what money is, why it has value, and how it moves through the economy. They'll see how households, banks, and governments keep money flowing, and understand how prices and value change over time through concepts like inflation.",
     icon: BookOpen,
   },
