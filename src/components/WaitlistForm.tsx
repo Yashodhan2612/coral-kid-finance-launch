@@ -162,11 +162,6 @@ export const WaitlistForm = ({ onSuccess }: { onSuccess: () => void }) => {
                   "Join Waitlist"
                 )}
               </Button>
-
-              <p className="text-sm text-muted-foreground text-center mt-4">
-                This class will start in November. We are collecting early interest from parents for the next batch. 
-                You can join the waitlist and we will notify you.
-              </p>
             </form>
           </Form>
         </div>
