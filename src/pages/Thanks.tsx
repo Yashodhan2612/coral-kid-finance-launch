@@ -23,11 +23,6 @@ const Thanks = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 md:py-12 bg-[var(--gradient-hero)]">
       <div className="max-w-2xl mx-auto text-center w-full">
-        {/* Success Icon */}
-        <div className="mb-6 md:mb-8 inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/10 animate-scale-in">
-          <CheckCircle2 className="w-10 h-10 md:w-12 md:h-12 text-primary" />
-        </div>
-
         {/* Thank You Message */}
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 animate-fade-in">
           Thanks for Joining!
