@@ -187,13 +187,13 @@ const Thanks = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8">
             <a
-              href="https://facebook.com/coralacademy"
+              href="https://www.coralacademy.com/class/financial-literacy-for-future-leaders-dea7aae1-5ce7-4e02-8c20-a73d62a061ac?referrer_id=4139f46a-3237-4ddd-9749-2a0ed8e282f4"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
-              <Facebook className="w-5 h-5" />
-              <span>Facebook</span>
+              <Globe className="w-5 h-5" />
+              <span>Visit Coral Academy</span>
             </a>
             <a
               href="https://instagram.com/coralacademy"
@@ -205,13 +205,13 @@ const Thanks = () => {
               <span>Instagram</span>
             </a>
             <a
-              href="https://www.coralacademy.com/class/financial-literacy-for-future-leaders-dea7aae1-5ce7-4e02-8c20-a73d62a061ac?referrer_id=4139f46a-3237-4ddd-9749-2a0ed8e282f4"
+              href="https://facebook.com/coralacademy"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
-              <Globe className="w-5 h-5" />
-              <span>Visit Coral Academy</span>
+              <Facebook className="w-5 h-5" />
+              <span>Facebook</span>
             </a>
           </div>
         </div>
