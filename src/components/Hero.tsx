@@ -29,7 +29,7 @@ export const Hero = ({ onJoinWaitlist }: { onJoinWaitlist: () => void }) => {
 
       {/* Sub-text */}
       <p className="text-lg md:text-xl text-muted-foreground text-center max-w-2xl mb-10 animate-fade-in">
-        From saving and investing to making smart choices — give your child a headstart adults wish they had.
+        From saving and investing to making smart choices — give your child the financial head start adults wish they had.
       </p>
 
       {/* CTA Button */}
