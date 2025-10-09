@@ -9,7 +9,14 @@ const Index = () => {
   const formRef = useRef<HTMLDivElement>(null);
 
   const scrollToForm = () => {
-    formRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (formRef.current) {
+      const elementPosition = formRef.current.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - 120; // Offset to keep Show More button visible
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
   };
 
   const handleFormSuccess = () => {
