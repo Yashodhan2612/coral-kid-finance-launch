@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { BookOpen, TrendingUp, PiggyBank, Target, DollarSign, ShoppingCart, CreditCard, Award } from "lucide-react";
+import { BookOpen, TrendingUp, PiggyBank, Target, DollarSign, ShoppingCart, CreditCard, Award, Calculator, LineChart, BarChart } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
@@ -20,13 +20,13 @@ const curriculumData = [
     week: "Week 2",
     title: "Macro Economics - How the US economy works",
     description: "Kids explore how America's economy works — from GDP and national income to supply and demand. They'll see how growth, jobs, and unemployment rates shape everyday life and understand what makes a strong, balanced economy.",
-    icon: PiggyBank,
+    icon: TrendingUp,
   },
   {
     week: "Week 3",
     title: "Money Math - How Numbers shape your future",
     description: "Every financial decision involves a bit of math. Learners calculate earnings, savings, and spending while exploring simple interest, compound growth, and percentages in real-life examples like discounts or taxes. Mini-projects help them track savings goals and estimate future earnings.",
-    icon: TrendingUp,
+    icon: Calculator,
   },
   {
     week: "Week 4",
@@ -47,19 +47,19 @@ const additionalWeeksData = [
     week: "Week 6",
     title: "Student Loans & Mortgages: How to Borrow Wisely",
     description: "Borrowing isn't bad — if you do it smartly. Kids explore credit cards, student loans, and mortgages, learning how interest, repayment, and credit work. They see how smart borrowing builds opportunities in education or home — and how poor choices can create long-term challenges.",
-    icon: ShoppingCart,
+    icon: CreditCard,
   },
   {
     week: "Week 7",
     title: "Investing: Making Your Money Work for You",
     description: "Why let money sleep in a piggy bank when it can grow? Kids discover how investing in stocks, mutual funds, and bonds helps savings multiply over time. They learn the power of compounding, how to balance risk and reward, and why starting early makes a big difference.",
-    icon: CreditCard,
+    icon: LineChart,
   },
   {
     week: "Week 8",
     title: "Stock Market Basics: Owning a Piece of a Company",
     description: "Kids learn what it means to invest in companies like Apple or Disney and become shareholders. They'll explore how stock prices rise and fall, what dividends are, and how diversifying investments keeps their money safer for the long run.",
-    icon: Award,
+    icon: BarChart,
   },
 ];
 
