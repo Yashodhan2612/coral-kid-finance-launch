@@ -27,8 +27,8 @@ const Thanks = () => {
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 animate-fade-in">
           Thanks for Joining!
         </h1>
-        <p className="text-lg md:text-xl text-muted-foreground mb-8 md:mb-10 animate-fade-in px-2">
-          We'll reach out to you soon with curriculum updates and class details.
+        <p className="text-base md:text-lg text-muted-foreground mb-8 md:mb-10 animate-fade-in px-2">
+          We'll reach out to you with class details.
         </p>
 
         {/* Classes Carousel */}
