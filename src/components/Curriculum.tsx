@@ -105,7 +105,7 @@ export const Curriculum = () => {
           Your Child's Financial Learning Roadmap
         </h2>
         <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
-          Each week builds a new skill — from understanding money to investing and making smart financial choices.
+          An <span className="text-primary">8 week</span> journey — from understanding money to investing and making smart financial choices.
         </p>
 
         <Accordion type="single" collapsible className="space-y-4">
