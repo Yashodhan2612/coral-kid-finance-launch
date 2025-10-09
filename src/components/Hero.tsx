@@ -37,7 +37,7 @@ export const Hero = ({ onJoinWaitlist }: { onJoinWaitlist: () => void }) => {
       </div>
 
       {/* Sub-text */}
-      <p className="text-lg md:text-xl text-foreground text-center max-w-2xl mb-10 animate-fade-in">
+      <p className="text-lg md:text-xl text-muted-foreground text-center max-w-2xl mb-10 animate-fade-in">
         From saving and investing to making wise choices — build smart money habits early.
       </p>
 
