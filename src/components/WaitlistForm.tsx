@@ -76,7 +76,7 @@ export const WaitlistForm = ({ onSuccess }: { onSuccess: () => void }) => {
             Join the waitlist
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Classes begin soon! Secure your spot, and we'll notify you shortly.
+            Classes begin soon! Secure your spot now.
           </p>
         </div>
 
