@@ -34,7 +34,7 @@ const Thanks = () => {
         {/* Classes Carousel */}
         <div className="bg-card border border-border rounded-2xl md:rounded-3xl p-4 md:p-8 mb-8 md:mb-10 shadow-[var(--shadow-soft)] animate-fade-in">
           <p className="text-sm md:text-base text-muted-foreground mb-6 md:mb-8 px-2">
-            Browse through our classes and enroll now. Use coupon <span className="text-orange-500 font-semibold">CORAL25</span> for a <span className="font-bold">FREE WEEK</span>!
+            Browse through our classes and enroll now. Use coupon <span className="text-orange-500 font-semibold">CORAL25</span> for a <span className="font-bold text-foreground/90">free week</span>!
           </p>
           
           <Carousel
