@@ -70,10 +70,10 @@ export const Curriculum = () => {
     <section className="py-16 px-4 bg-muted/30">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          1-Month Sample Curriculum
+          Your Child's Financial Learning Roadmap
         </h2>
         <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
-          A structured, engaging journey through essential financial concepts designed specifically for young minds.
+          Each week builds a new skill — from understanding money to investing and making smart financial choices.
         </p>
 
         <Accordion type="single" collapsible className="space-y-4">
