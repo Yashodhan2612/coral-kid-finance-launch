@@ -24,7 +24,7 @@ const Index = () => {
   };
 
   useEffect(() => {
-    document.title = "Coral Kid Finance | Financial Literacy for Kids";
+    document.title = "Finance 101 | A Practical Playbook for Mastering Money";
   }, []);
 
   return (
