@@ -73,10 +73,10 @@ export const WaitlistForm = ({ onSuccess }: { onSuccess: () => void }) => {
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Join the waitlist
+            Enroll Now for FREE
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Classes begin soon! Secure your spot now.
+            Class meets every Thursday 12PM PST. Secure your spot now!
           </p>
         </div>
 

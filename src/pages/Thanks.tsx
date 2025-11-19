@@ -7,7 +7,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const Thanks = () => {
   useEffect(() => {
-    document.title = "Thanks | Coral Kid Finance";
+    document.title = "Thanks | Finance 101";
   }, []);
   const couponSteps = [
     { 
@@ -28,7 +28,7 @@ const Thanks = () => {
           Thanks for Joining!
         </h1>
         <p className="text-base md:text-lg text-muted-foreground mb-8 md:mb-10 animate-fade-in px-2">
-          We'll reach out to you with class details.
+          We'll reach out to you with class details. Classes meet every Thursday at 12PM PST.
         </p>
 
         {/* Classes Carousel */}

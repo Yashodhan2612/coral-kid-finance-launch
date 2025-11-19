@@ -38,7 +38,7 @@ export const Hero = ({ onJoinWaitlist }: { onJoinWaitlist: () => void }) => {
 
       {/* Sub-text */}
       <p className="text-lg md:text-xl text-muted-foreground text-center max-w-2xl mb-10 animate-fade-in">
-        From saving and investing to making wise choices — build smart money habits early.
+        A Practical Playbook for Mastering Money. Designed by Stanford MBAs & Professors, this hands-on class explores essential concepts ranging from economic systems and compounding to mortgages and the stock market.
       </p>
 
       {/* CTA Button */}
@@ -47,7 +47,7 @@ export const Hero = ({ onJoinWaitlist }: { onJoinWaitlist: () => void }) => {
         onClick={onJoinWaitlist}
         className="text-lg px-8 py-6 rounded-full bg-gradient-cta shadow-[var(--shadow-warm)] hover:scale-105 transition-all duration-300 animate-fade-in"
       >
-        Join the Waitlist
+        Enroll Now for FREE
       </Button>
 
       {/* Decorative elements */}
